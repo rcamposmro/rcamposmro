@@ -13,8 +13,8 @@ Resumen de los principales componentes del microservicio y su interacción.
 
 
 ### Flujo del servicio
+![image](https://github.com/user-attachments/assets/9891d83c-0fa5-419e-abbd-aecb5a6ca34d)
 
-![image](https://github.com/user-attachments/assets/844dcc3c-fb43-4bf4-8810-ed8ad3a5a6f3)
 
 ## 3. Requisitos Previos
 
