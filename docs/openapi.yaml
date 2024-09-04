@@ -1,0 +1,1254 @@
+openapi: 3.0.3
+info:
+  x-logo:
+    #url: 'data:image/png;base64,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'
+    url: 'data:image/png;base64,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'
+    backgroundColor: '#FFFFFF'
+    altText: 'MRO Holdings'
+  title: Swagger Petstore - OpenAPI 3.0
+  description: |-
+    This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
+    Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
+    You can now help us improve the API whether it's by making changes to the definition itself or to the code.
+    That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
+
+    _If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_
+    
+    Some useful links:
+    - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
+    - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)
+    - [RFC 7807](https://datatracker.ietf.org/doc/html/rfc7807#page-3)
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: '2.0'
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: https://mroholdings.docapis.io/api/v3
+tags:
+  - name: intro
+    x-displayName: "Introducción"
+    description: |-
+      Cupidatat eu fugiat elit nulla ea consectetur aute occaecat ex eiusmod ut cillum aliquip eiusmod. Eu sunt laboris eiusmod aliqua sunt nulla pariatur irure. Cupidatat veniam ex officia non. Nulla laboris magna do enim laboris velit proident est. Eiusmod eu ad nisi excepteur qui reprehenderit sit anim tempor. Lorem enim proident elit ex ex voluptate reprehenderit ea commodo magna.
+
+      Ipsum do ullamco velit amet fugiat. Magna mollit laboris esse irure exercitation aliqua excepteur. Labore proident non ex dolor reprehenderit et duis veniam. Enim enim deserunt id minim ea qui aliquip commodo sit excepteur sit quis.
+  - name: pet
+    description: Fugiat sit laboris est ullamco. Minim proident elit commodo laboris fugiat. Velit tempor do duis cillum laboris nulla nulla consectetur elit.
+    x-displayName: Pets Endpoints
+    externalDocs:
+      description: Find out more
+      url: http://swagger.io
+  # - name: store
+  #   description: Commodo cupidatat duis voluptate pariatur sunt nisi Lorem reprehenderit aliqua do et consequat irure. Nulla pariatur eu mollit esse. Ex laborum pariatur exercitation labore tempor aliqua fugiat. Velit aliquip deserunt dolore eu labore adipisicing voluptate. Fugiat consequat consectetur laborum in. Aute minim reprehenderit occaecat non.
+  #   x-displayName: Store Pets Endpoints
+  #   externalDocs:
+  #     description: Find out more about our store
+  #     url: http://swagger.io
+  - name: user
+    description: Consequat occaecat labore adipisicing dolor in incididunt labore non in sint reprehenderit duis exercitation est. Ipsum eu laboris duis irure. Occaecat veniam incididunt adipisicing deserunt ad culpa amet dolor officia anim in commodo deserunt id. Ullamco commodo in aute laboris non nulla magna ad eu consequat Lorem aute.
+    x-displayName: User Pets Endpoints
+x-tagGroups: 
+  - name: Introduccion
+    tags: 
+      - intro
+  - name: Endpoints
+    tags: 
+    -  pet
+#    -  store
+    -  user
+security:
+  - petstore_auth: []
+
+paths:
+  /pet:
+    put:
+      tags:
+        - pet
+      summary: Update an existing pet
+      description: Update an existing pet by Id
+      operationId: updatePet
+      requestBody:
+        $ref: "#/components/requestBodies/Pet"
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+    post:
+      tags:
+        - pet
+      summary: Add a new pet to the store
+      description: Add a new pet to the store
+      operationId: addPet
+      requestBody:
+        $ref: "#/components/requestBodies/Pet"
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/findByStatus:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by status
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByStatus
+      parameters:
+        - name: status
+          in: query
+          description: Status values that need to be considered for filter
+          required: false
+          explode: true
+          schema:
+            type: string
+            default: available
+            enum:
+              - available
+              - pending
+              - sold
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"    
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/findByTags:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by tags
+      description: Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+      operationId: findPetsByTags
+      parameters:
+        - name: tags
+          in: query
+          description: Tags to filter by
+          required: false
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/{petId}:
+    get:
+      tags:
+        - pet
+      summary: Find pet by ID
+      description: Returns a single pet
+      operationId: getPetById
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to return
+          required: true
+          example: 10
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"
+      security:
+        - api_key: []
+        - petstore_auth:
+            - write:pets
+            - read:pets
+    post:
+      tags:
+        - pet
+      summary: Updates a pet in the store with form data
+      description: ''
+      operationId: updatePetWithForm
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet that needs to be updated
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: name
+          in: query
+          description: Name of pet that needs to be updated
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Status of pet that needs to be updated
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+    delete:
+      tags:
+        - pet
+      summary: Deletes a pet
+      description: delete a pet
+      operationId: deletePet
+      parameters:
+        - name: api_key
+          in: header
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: petId
+          in: path
+          description: Pet id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/{petId}/uploadImage:
+    post:
+      tags:
+        - pet
+      summary: uploads an image
+      description: ''
+      operationId: uploadFile
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to update
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: additionalMetadata
+          in: query
+          description: Additional Metadata
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+              examples: 
+                dogie:
+                  $ref: '#/components/examples/petExample'     
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden"
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: No encontrado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  # /store/inventory:
+  #   get:
+  #     tags:
+  #       - store
+  #     summary: Returns pet inventories by status
+  #     description: Returns a map of status codes to quantities
+  #     operationId: getInventory
+  #     responses:
+  #       '200':
+  #         description: successful operation
+  #         content:
+  #           application/json:
+  #             schema:
+  #               type: object
+  #               additionalProperties:
+  #                 type: integer
+  #                 format: int32
+  #     security:
+  #       - api_key: []
+  # /store/order:
+  #   post:
+  #     tags:
+  #       - store
+  #     summary: Place an order for a pet
+  #     description: Place a new order in the store
+  #     operationId: placeOrder
+  #     requestBody:
+  #       content:
+  #         application/json:
+  #           schema:
+  #             $ref: '#/components/schemas/Order'
+  #         application/xml:
+  #           schema:
+  #             $ref: '#/components/schemas/Order'
+  #         application/x-www-form-urlencoded:
+  #           schema:
+  #             $ref: '#/components/schemas/Order'
+  #     responses:
+  #       '200':
+  #         description: successful operation
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: '#/components/schemas/Order'
+  #       '405':
+  #         description: Invalid input
+  # /store/order/{orderId}:
+  #   get:
+  #     tags:
+  #       - store
+  #     summary: Find purchase order by ID
+  #     description: For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.
+  #     operationId: getOrderById
+  #     parameters:
+  #       - name: orderId
+  #         in: path
+  #         description: ID of order that needs to be fetched
+  #         required: true
+  #         schema:
+  #           type: integer
+  #           format: int64
+  #     responses:
+  #       '200':
+  #         description: successful operation
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: '#/components/schemas/Order'          
+  #           application/xml:
+  #             schema:
+  #               $ref: '#/components/schemas/Order'
+  #       '400':
+  #         description: Invalid ID supplied
+  #       '404':
+  #         description: Order not found
+  #   delete:
+  #     tags:
+  #       - store
+  #     summary: Delete purchase order by ID
+  #     description: For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors
+  #     operationId: deleteOrder
+  #     parameters:
+  #       - name: orderId
+  #         in: path
+  #         description: ID of the order that needs to be deleted
+  #         required: true
+  #         schema:
+  #           type: integer
+  #           format: int64
+  #     responses:
+  #       '400':
+  #         description: Invalid ID supplied
+  #       '404':
+  #         description: Order not found
+  # /user:
+  #   post:
+  #     tags:
+  #       - user
+  #     summary: Create user
+  #     description: This can only be done by the logged in user.
+  #     operationId: createUser
+  #     requestBody:
+  #       description: Created user object
+  #       content:
+  #         application/json:
+  #           schema:
+  #             $ref: '#/components/schemas/User'
+  #         application/xml:
+  #           schema:
+  #             $ref: '#/components/schemas/User'
+  #         application/x-www-form-urlencoded:
+  #           schema:
+  #             $ref: '#/components/schemas/User'
+  #     responses:
+  #       default:
+  #         description: successful operation
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: '#/components/schemas/User'
+  #           application/xml:
+  #             schema:
+  #               $ref: '#/components/schemas/User'
+  # /user/createWithList:
+  #   post:
+  #     tags:
+  #       - user
+  #     summary: Creates list of users with given input array
+  #     description: Creates list of users with given input array
+  #     operationId: createUsersWithListInput
+  #     requestBody:
+  #       content:
+  #         application/json:
+  #           schema:
+  #             type: array
+  #             items:
+  #               $ref: '#/components/schemas/User'
+  #     responses:
+  #       '200':
+  #         description: Successful operation
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: '#/components/schemas/User'          
+  #           application/xml:
+  #             schema:
+  #               $ref: '#/components/schemas/User'
+  #       default:
+  #         description: successful operation
+  # /user/login:
+  #   get:
+  #     tags:
+  #       - user
+  #     summary: Logs user into the system
+  #     description: ''
+  #     operationId: loginUser
+  #     parameters:
+  #       - name: username
+  #         in: query
+  #         description: The user name for login
+  #         required: false
+  #         schema:
+  #           type: string
+  #       - name: password
+  #         in: query
+  #         description: The password for login in clear text
+  #         required: false
+  #         schema:
+  #           type: string
+  #     responses:
+  #       '200':
+  #         description: successful operation
+  #         headers:
+  #           X-Rate-Limit:
+  #             description: calls per hour allowed by the user
+  #             schema:
+  #               type: integer
+  #               format: int32
+  #           X-Expires-After:
+  #             description: date in UTC when token expires
+  #             schema:
+  #               type: string
+  #               format: date-time
+  #         content:
+  #           application/xml:
+  #             schema:
+  #               type: string
+  #           application/json:
+  #             schema:
+  #               type: string
+  #       '400':
+  #         description: Invalid username/password supplied
+  # /user/logout:
+  #   get:
+  #     tags:
+  #       - user
+  #     summary: Logs out current logged in user session
+  #     description: ''
+  #     operationId: logoutUser
+  #     parameters: []
+  #     responses:
+  #       default:
+  #         description: successful operation
+  /user/{username}:
+    get:
+      tags:
+        - user
+      summary: Get user by user name
+      description: ''
+      operationId: getUserByName
+      parameters:
+        - name: username
+          in: path
+          description: 'The name that needs to be fetched. Use user1 for testing. '
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              examples: 
+                user:  
+                  $ref: "#/components/examples/user"
+        '400':
+          description: Bad Request
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/400BadRequest" 
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden" 
+            application/xml:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403ForbiddenXML:
+                  $ref: "#/components/examples/403ForbiddenXML"
+        '404':
+          description: Not Found
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud" 
+    # put:
+    #   tags:
+    #     - user
+    #   summary: Update user
+    #   description: This can only be done by the logged in user.
+    #   operationId: updateUser
+    #   parameters:
+    #     - name: username
+    #       in: path
+    #       description: name that need to be deleted
+    #       required: true
+    #       schema:
+    #         type: string
+    #   requestBody:
+    #     description: Update an existent user in the store
+    #     content:
+    #       application/json:
+    #         schema:
+    #           $ref: '#/components/schemas/User'
+    #       application/xml:
+    #         schema:
+    #           $ref: '#/components/schemas/User'
+    #       application/x-www-form-urlencoded:
+    #         schema:
+    #           $ref: '#/components/schemas/User'
+    #   responses:
+    #     default:
+    #       description: successful operation
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Ok
+          content: 
+            application/json:
+              schema: 
+                properties: 
+                  respuesta: 
+                    type: string
+                    example: Borrado con exito
+        '403':
+          description: No autorizado
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/403Forbidden" 
+        '404':
+          description: Not Found
+          x-summary: Estandar de error basado en el RFC7807*
+          content: 
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/Error"
+              examples: 
+                403Forbidden:
+                  $ref: "#/components/examples/404NotFoud" 
+components:
+  schemas:
+    # Order:
+    #   type: object
+    #   properties:
+    #     id:
+    #       type: integer
+    #       format: int64
+    #       example: 10
+    #     petId:
+    #       type: integer
+    #       format: int64
+    #       example: 198772
+    #     quantity:
+    #       type: integer
+    #       format: int32
+    #       example: 7
+    #     shipDate:
+    #       type: string
+    #       format: date-time
+    #     status:
+    #       type: string
+    #       description: Order Status
+    #       example: approved
+    #       enum:
+    #         - placed
+    #         - approved
+    #         - delivered
+    #     complete:
+    #       type: boolean
+    #   xml:
+    #     name: order
+    # Customer:
+    #   type: object
+    #   properties:
+    #     id:
+    #       type: integer
+    #       format: int64
+    #       example: 100000
+    #     username:
+    #       type: string
+    #       example: fehguy
+    #     address:
+    #       type: array
+    #       xml:
+    #         name: addresses
+    #         wrapped: true
+    #       items:
+    #         $ref: '#/components/schemas/Address'
+    #   xml:
+    #     name: customer
+    # Address:
+    #   type: object
+    #   properties:
+    #     street:
+    #       type: string
+    #       example: 437 Lytton
+    #     city:
+    #       type: string
+    #       example: Palo Alto
+    #     state:
+    #       type: string
+    #       example: CA
+    #     zip:
+    #       type: string
+    #       example: '94301'
+    #   xml:
+    #     name: address
+    Category:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1
+        name:
+          type: string
+          example: Dogs
+      xml:
+        name: category
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        username:
+          type: string
+          example: theUser
+        firstName:
+          type: string
+          example: John
+        lastName:
+          type: string
+          example: James
+        email:
+          type: string
+          example: john@email.com
+        password:
+          type: string
+          example: '12345'
+        phone:
+          type: string
+          example: '12345'
+        userStatus:
+          type: integer
+          description: User Status
+          format: int32
+          example: 1
+#      examples:
+#        example:
+#          $ref:"#/components/schemas/examples/user"
+      xml:
+        name: user
+    Tag:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+      xml:
+        name: tag
+    Pet:
+      required:
+        - name
+        - photoUrls
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        name:
+          type: string
+          example: doggie
+        category:
+          $ref: '#/components/schemas/Category'
+        photoUrls:
+          type: array
+          xml:
+            wrapped: true
+          items:
+            type: string
+            xml:
+              name: photoUrl
+        tags:
+          type: array
+          xml:
+            wrapped: true
+          items:
+            $ref: '#/components/schemas/Tag'
+        status:
+          type: string
+          description: pet status in the store
+          enum:
+            - available
+            - pending
+            - sold
+      xml:
+        name: pet
+    # ApiResponse:
+    #   type: object
+    #   properties:
+    #     code:
+    #       type: integer
+    #       format: int32
+    #     type:
+    #       type: string
+    #     message:
+    #       type: string
+    #   xml:
+    #     name: '##default'
+    Error:
+      type: object
+      properties: 
+        problem:
+          type: object
+          properties: 
+            type:
+              type: string
+            title:
+              type: string
+            detail:
+              type: string
+            instance:
+              type: string
+            balance:
+              type: integer
+              format: int32
+            accounts:
+              type: array
+            invalid-params:
+              type: array
+  requestBodies:
+    Pet:
+      description: Pet object that needs to be added to the store
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Pet'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/Pet'
+        application/x-www-form-urlencoded:
+          schema:
+            $ref: '#/components/schemas/Pet'
+    UserArray:
+      description: List of user object
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/User'
+  securitySchemes:
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://petstore3.swagger.io/oauth/authorize
+          scopes:
+            write:pets: modify pets in your account
+            read:pets: read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
+  # Reusable examples
+  examples:
+    petExample:
+      summary: Occaecat mollit ullamco quis eu ex. Velit occaecat voluptate aliqua ex adipisicing. Eiusmod ea exercitation cupidatat id consequat. Est id eu reprehenderit nisi velit incididunt officia consectetur exercitation. Cupidatat ullamco reprehenderit excepteur velit amet deserunt. Irure commodo pariatur commodo ea mollit nostrud sit. Ex sint sunt reprehenderit proident ea amet est adipisicing fugiat officia in eu tempor consequat.
+      value:
+        id: 10
+        name: "doggie"
+        category: {"id": 1, "name": "Dogs"}
+        photoUrls: ["string"]
+        tags: [{}]
+        status: "available"
+    user:
+      summary: Veniam aute adipisicing nostrud amet elit commodo ullamco non esse ea sunt id. Qui ipsum cupidatat occaecat deserunt deserunt aute eiusmod sunt pariatur ullamco eiusmod proident irure. Fugiat eiusmod sunt laborum commodo adipisicing nulla magna labore anim in elit qui. Est qui eu commodo ullamco sint pariatur amet nisi ex in ea Lorem consectetur amet.
+      value:
+        id: 10
+        username: "theUser"
+        firstName: "John"
+        lastName: "James"
+        email: "john@email.com"
+        password: "12345"
+        phone: "12345"
+        userStatus: 1
+    400BadRequest:
+      summary: Estandar de error basado en el RFC 7807*
+      value:
+        problem:
+          type: "https://example.com/probs/validation-error"
+          title: "Your request parameters didn't validate."
+          invalid-params: [{"name": "age","reason": "must be a positive integer"}, {"name": "color","reason": "must be 'green', 'red' or 'blue'"}]
+    403Forbidden:
+      summary: Estandar de error basado en el RFC 7807*
+      value:
+        problem:
+          type: "https://example.com/probs/out-of-credit"
+          title: "You do not have enough credit."
+          detail: "Your current balance is 30, but that costs 50."
+          instance: "/account/12345/msgs/abc"
+          balance: 30
+          accounts: ["/account/12345","/account/67890"]
+    403ForbiddenXML:
+      summary: Adipisicing Lorem commodo voluptate sint aliquip ea exercitation nisi nulla eiusmod. Ullamco est ipsum sit occaecat. Ut laboris eiusmod excepteur sit incididunt tempor magna qui proident.
+      value: 
+        '<?xml version="1.0" encoding="UTF-8"?>
+          <problem xmlns="urn:ietf:rfc:7807">
+          <type>https://example.com/probs/out-of-credit</type>
+          <title>You do not have enough credit.</title>
+          <detail>Your current balance is 30, but that costs 50.</detail>
+          <instance>https://example.net/account/12345/msgs/abc</instance>
+          <balance>30</balance>
+          <accounts>
+            <i>https://example.net/account/12345</i>
+            <i>https://example.net/account/67890</i>
+          </accounts>
+        </problem>'
+    404NotFoud:
+      summary: Magna sit nisi aute duis. Nulla eu veniam sunt duis eiusmod dolor esse. Non pariatur mollit laborum in proident ipsum et id. Ullamco commodo id ullamco enim quis qui culpa. Lorem eu non velit dolor id eu enim culpa ex magna irure.
+      value: 
+        problem:
+          type: "https://example.com/probs/findPath"
+          title: "Your path request is not found"
+          detail: Pariatur adipisicing adipisicing dolor id consectetur anim nisi labore ipsum deserunt veniam.
