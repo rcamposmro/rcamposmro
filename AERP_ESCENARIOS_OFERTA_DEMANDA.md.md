@@ -9,7 +9,8 @@ Una breve descripción del microservicio, su propósito y lo que resuelve o apor
 Diagrama o descripción de la arquitectura general.
 Resumen de los principales componentes del microservicio y su interacción.
 ### Analisis de entradas y salidas
-![image](https://github.com/user-attachments/assets/17dd9225-1e87-44ed-aa78-fc52f56a0294)
+![image](https://github.com/user-attachments/assets/85d4523c-2e53-4679-8bd1-3aa3e6dd36e7)
+
 
 ### Flujo del servicio
 
