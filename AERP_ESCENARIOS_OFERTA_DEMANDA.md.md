@@ -36,11 +36,10 @@ Comandos para ejecutar tests o verificar que el servicio funciona correctamente.
 
 Puedes visualizar la especificación OpenAPI utilizando [Swagger Editor](https://editor.swagger.io/)
 
-Tambien podemos visualizarla de esta manera: [Ver Documentación de la API](https://rcamposmro.github.io/rcamposmro/docs/index.html)
+Tambien podemos visualizarla de esta manera: [Ver Documentación de la API](https://rcamposmro.github.io/rcamposmro/)
 Documentación de los endpoints expuestos por el microservicio.
 Ejemplos de peticiones y respuestas (e.g., usando cURL o Postman).
 Explicación de los parámetros requeridos y respuestas esperadas.
-https://mro-holdings.github.io/rcamposmro/docs/index.html
 
 ## 8. Manejo de Errores
 
