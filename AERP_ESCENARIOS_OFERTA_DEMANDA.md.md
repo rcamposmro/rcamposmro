@@ -34,6 +34,9 @@ Comandos para ejecutar tests o verificar que el servicio funciona correctamente.
 
 ## 7. APIs
 
+Puedes visualizar la especificación OpenAPI utilizando [Swagger Editor](https://editor.swagger.io/) o descargarla directamente [aquí](./path/to/openapi.yaml).
+
+
 Documentación de los endpoints expuestos por el microservicio.
 Ejemplos de peticiones y respuestas (e.g., usando cURL o Postman).
 Explicación de los parámetros requeridos y respuestas esperadas.
